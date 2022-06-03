@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="dx3.css">
+    <head>
+        <title>Dead</title>
+
+        <!-- add icon link -->
+        <link rel = "icon" href = "Dead.png" type = "image/x-icon">
+    </head>
+
+    <body>
+        <img src="Dead.png", style="height:500px; width: 100%;">
+        <!-- Navigation -->
+        <nav class="dx3-bar  dx3-black">
+           <a href="OURSTORY.html" class="dx3-button dx3-bar-item"> About </a>
+        </nav>
+
+        <!-- Slide Show -->  
+        <div class="slidercontainer">  
+            <div class="showSlide fade">  
+                <img src="how-to-use-xbox-game-pass-on-your-pc-featured-c6d74b87b3ea48bc9ec4c5cc6417aa63.jpg"/>  
+            </div>  
+          
+            <div class="showSlide fade">  
+                <img src="Unreal+Engine_blog_a-first-look-at-unreal-engine-5_UE5_Announcement_Feed_Large-1920x1080-8c8ab609059186399d92ca5dc8a748e62880e0e7.jpg"/>  
+            </div>  
+            <div class="showSlide fade">  
+                <img src="unreal-engine-5-screenshot.webp"/>  
+            </div> 
+            <!-- Navigation arrows -->  
+            <a class="left" onclick="nextSlide(-1)">❮</a>  
+            <a class="right" onclick="nextSlide(1)">❯</a>  
+        </div>
+        <script type="text/javascript">  
+            var slide_index = 1;  
+            displaySlides(slide_index);  
+            function nextSlide(n) {  
+                displaySlides(slide_index += n);  
+            }  
+            function currentSlide(n) {  
+                displaySlides(slide_index = n);  
+            }  
+            function displaySlides(n) {  
+                var i;  
+                var slides = document.getElementsByClassName("showSlide");  
+                if (n > slides.length) { slide_index = 1 }  
+                if (n < 1) { slide_index = slides.length }  
+                for (i = 0; i < slides.length; i++) {  
+                    slides[i].style.display = "none";  
+                }  
+                slides[slide_index - 1].style.display = "block";  
+            }  
+        </script>
+
+        <section class="dx3-container dx3-center dx3-black">
+            <h2 class="dx3-wide" style="font-size:45px">DEAD</h2>
+            <p class="dx3-opacity"><i><b>Bringing dreams to reality</b></i></p>
+        </section>
+
+        <section class="dx3-container dx3-content dx3-center" style="max-width:1000px">
+            <p class="dx3-justify">
+                <b>Corporate Headquaters</b><br>
+                <b>Abuja, Nigeria</b>
+                <br>
+                Founded in 2022, Dead is a Nigerian company founded by CEO Aghogho Samuel. The company is headquartered in Abuja, Nigeria.
+                We aim at becoming the leading interactive entertainment company and provider of Holographic engine technlogy. Our Holographic
+                engine technology which is still undergoing some little inspection and is set to release in year 2024 will bring a revolutionary
+                change to the gaming industry and worldwide (in both film and televison, architecture and manufacturing). Dead provides end-to-end digital
+                ecosystem for developers and creators to bring to reality their imaginations and dreams. 
+            </p>
+        </section>
+
+        <section class="dx3-container dx3-center dx3-black">
+            <h2 class=" center"style="font-size:45px; ">Our Sponsors and Partners</h2>
+        </section>
+
+        <section class=" dx3-row-padding dx3-center">
+            <section class="dx3-row-padding  dx3-center">
+                <article class="dx3-third">
+                    <p>Epic Games</p>
+                    <img src="EPICGAMES.png" alt="Epic Games" style="height:50%; width:50%">
+                </article>
+
+                <article class="dx3-third">
+                    <p>Razer</p>
+                    <img src="RAZER.png" alt="Razer" style="height:50%; width:50%">
+                </article>
+                
+                <article class="dx3-third">
+                    <p>EA</p>
+                    <img src="EA SPORTS.png" alt="EA Sports" style="height:50%; width:50%">
+                </article>
+              </section>
+        </section>
+
+        <hr>
+
+        <section class="dx3-container dx3-content dx3-center" style="max-width:1000px">
+            <p class="dx3-justify">
+                Our sponsors and partners have worked with us to make the gaming community one to remember from the 
+                undisputed Unreal Engine down to the upcoming Holographic engine.
+            </p>
+        <br>
+        </section>
+
+        <!-- Footer -->
+        <footer class="dx3-container dx3-padding-64 dx3-center dx3-black dx3-xlarge">
+            <b>Contact Us</b><br><br>
+            <h6>
+                Dead, Inc.
+                Plot 681, Cadastral Zone C-00, Research & Institution Area,<br>
+                Jabi Airport Bypass,<br>
+                Abuja FCT,<br>
+                900001,<br> 
+                NIGERIA.<br>
+                Tel: +234 704 783 6361
+            </h6>
+        </footer>
+    </body>
+</html>
